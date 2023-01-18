@@ -74,8 +74,8 @@ app.post("/todos", async (request, response) => {
 //PUT https://mytodoapp.com/todos/123/markAscomplete
 app.put("/todos/:id", async (request, response) => {
   console.log("Mark Todo as completed:", request.params.id);
-  const todo = await Todo.findByPk(request.params.id);
   try {
+    const todo = await Todo.findByPk(request.params.id);
     const updatedtodo = await todo.setCompletionStatus(request.body.completed);
     return response.json(updatedtodo);
   } catch (error) {
