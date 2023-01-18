@@ -75,7 +75,6 @@ module.exports = (sequelize, DataTypes) => {
       return this.update({ completed: bool });
     }
   }
-
   Todo.init(
     {
       title: DataTypes.STRING,
