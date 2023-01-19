@@ -1,8 +1,10 @@
-body {
-font-family: sans-serif;
-background: white;
+.Todo-item:hover .trash-icon {
+  display: block;
 }
-
-.Todo-Item:hover .trash-icon{
-  display:block;
+h5 {
+  display: inline;
+}
+body {
+  font-family: 'Blackadder ITC', Times, serif;
+  background: white;
 }
